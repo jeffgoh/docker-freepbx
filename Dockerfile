@@ -31,6 +31,7 @@ RUN set -x && \
                         automake \
                         bison \
                         build-essential \
+			default-libmysqlclient-dev \
                         doxygen \
                         flex \
                         libasound2-dev \
@@ -44,6 +45,8 @@ RUN set -x && \
                         libneon27-dev \
                         libnewt-dev \
                         libogg-dev \
+                        libopus-dev \
+                        libopusfile-dev \
                         libresample1-dev \
                         libspandsp-dev \
                         libsqlite3-dev \
