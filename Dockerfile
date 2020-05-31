@@ -78,6 +78,7 @@ RUN set -x && \
                     libiodbc2 \
                     libicu63 \
                     libicu-dev \
+		    libmariadb3 \
                     libsrtp2-1 \
                     locales \
                     locales-all \
