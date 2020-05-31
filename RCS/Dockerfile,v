@@ -1,4 +1,27 @@
-FROM tiredofit/nodejs:10-debian-latest
+head	1.1;
+access;
+symbols;
+locks
+	jeff:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2020.05.31.09.38.00;	author jeff;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@FROM tiredofit/nodejs:10-debian-latest
 LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
 
 ### Set Defaults
@@ -138,7 +161,6 @@ RUN set -x && \
     menuselect/menuselect --disable BUILD_NATIVE \
                           --enable app_confbridge \
                           --enable app_fax \
-			  --enable app_mysql \
                           --enable app_macro \
                           --enable codec_opus \
                           --enable codec_silk \
@@ -220,3 +242,4 @@ EXPOSE 80 443 4445 4569 5060/udp 5160/udp 5061 5161 8001 8003 8008 8009 18000-20
 
 ### Files Add
 ADD install /
+@
